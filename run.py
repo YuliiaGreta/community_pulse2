@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from app import create_app, db
 from app.models import Category, Question
 
@@ -17,3 +18,11 @@ if __name__ == '__main__':
             db.session.add(sample_question)
             db.session.commit()
     app.run(debug=True)  # Включение режима отладки
+=======
+from app import create_app
+
+app = create_app()
+
+if __name__ == "__main__":
+    app.run(debug=True)
+>>>>>>> e33c05c0128305e6a458ab2ca82b2fa65d8bfb1e
